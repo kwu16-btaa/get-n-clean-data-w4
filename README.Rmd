@@ -1,0 +1,16 @@
+---
+title: "Get and Cleaning Data Week 4 Class Assignment"
+author: "Kevin Wu"
+date: "May 2, 2017"
+output: html_notebook
+---
+
+## Files included for this assignment
+* Human Activity Recognition Tidy dataset.csv - This is a tidy data set that include 81 variables. One is the class label Activiity, one for subject and rest are mean and standard deviation of measurements. 
+* Code Book.rmd - Describing all the variables in the above data set, along with the units and other relevant information.
+* run_analysis.R - This script loads the raw data from the UCI HAR Dataset. It performs below feature selection and transformation steps.
+    + Its selects 79 variables which are either the means and standard deviations of the measurements. 
+    + Descriptive activity names are used in the data set.
+    + It combines class label, subject and measurements in one data set.
+    + It merges training and test data in one data set.
+    + It generates a second tidy data set with the average of each variable for each activity and each subject. (this file was not uploaded to Github as it was not required per assignment instruction)
