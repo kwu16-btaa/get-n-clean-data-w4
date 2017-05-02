@@ -70,7 +70,7 @@ write.csv(data_all, file = 'All.csv', row.names = FALSE)
 write.csv(colnames(data_all), file='variablenames.csv', row.names = FALSE)
 # group by activity and subject and calculate the average
 data_average <- data_all %>% group_by(Activity, Object_ID) %>% summarise_each(funs(mean))
-write.csv(data_average, file = 'Average.csv', row.names = FALSE)
+write.table(data_average, file = 'Average.txt', row.names = FALSE)
 
 
 # write to tidy data set to a file
